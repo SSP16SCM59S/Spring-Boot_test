@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Test</title>	
+	
+	<!-- Bootstrap Core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+	<fieldset>
+			<legend>
+				Upload File with Meta Data fields
+			</legend>
+				<label for="file">Upload a json File:</label> 
+				<input type = "file" id="file" name="file" required>
+				<br>
+				<input type="submit" name="submit">
+		</fieldset>
+		
+		
+</form>
+<br>
+<br>
+<form action="/download" method="get">
+	
+	<fieldset>
+		<legend>
+			Get File Meta Data
+		</legend>
+		
+		<input type="submit" name="submit">
+	</fieldset>
+
+</form>
+
+</body>
+
+</html>
